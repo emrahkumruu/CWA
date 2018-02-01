@@ -4,6 +4,7 @@ var sass = function (gulp, options, plugins) {
             .pipe(plugins.sass({
                 outputStyle: 'expanded'
             }))
+            .pipe(plugins.autoprefixer())
             .pipe(plugins.rename(options.pkg.name + '.css'))
             .pipe(gulp.dest(options.config.paths.styles))
             .pipe(plugins.sass({

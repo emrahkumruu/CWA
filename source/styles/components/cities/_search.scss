@@ -1,0 +1,22 @@
+/**
+ * @author Emrah Kumru
+ */
+
+.cities-search {
+
+  display: flex;
+  justify-content: center;
+  padding: $base-gutter;
+  margin: 0  $base-gutter + 10px;
+
+
+  input {
+    border: 0;
+    padding: $base-gutter - 10px;
+    border-bottom: 1px solid gray;
+    width: 300px;
+    outline: none;
+    font-size: 20px;
+  }
+
+}

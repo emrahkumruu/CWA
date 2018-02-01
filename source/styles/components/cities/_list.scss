@@ -1,0 +1,55 @@
+/**
+ * @author Emrah Kumru
+ */
+
+.cities {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.43);
+  border-radius: 20px;
+  padding: $base-gutter - 15px;
+
+  ul {
+    list-style: none;
+    margin: 0 $base-gutter - 10px;
+    padding: 0;
+
+    li {
+      border-top: 1px solid rgba(128, 128, 128, 0.43);
+
+      &:first-child {
+        border: none;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+        transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+        z-index: 3;
+        margin: $base-gutter - 15px;
+        border: 0
+      }
+
+      a {
+        padding: $base-gutter $base-gutter + 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+    }
+  }
+
+  .city-name {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .city-weather {
+    font-size: 28px;
+    text-align: center;
+
+  }
+
+}

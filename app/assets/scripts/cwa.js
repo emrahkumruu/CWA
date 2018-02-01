@@ -40,6 +40,8 @@ angular.module('cwa.cities', ['ngRoute'])
 
     .controller('citiesCtrl', function($scope,Services) {
 
+        $scope.title = 'Welcome to Cities Weather App';
+
         Services.getJson().then(function (response) {
             $scope.Cities = angular.fromJson(response.data);
         });

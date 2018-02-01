@@ -1,11 +1,22 @@
-<div class="">
-</div>
+<div class="cities">
+    <h4 class="cities-header">
+        {{title}}
+    </h4>
+    <div class="cities-search">
+        <input type="text" placeholder="Search">
+    </div>
 
-<ul ng-repeat="city in Cities">
-    <li>
-        <a href="#!/city/{{city.id}}">
-            {{city.name}}
-            {{city.weather}}
-        </a>
-    </li>
-</ul>
+    <ul>
+        <li ng-repeat="city in Cities">
+            <a href="#!/city/{{city.id}}">
+               <span class="city-name">
+                   {{city.name}}
+               </span>
+
+                <span class="city-weather">
+                     {{city.weather}} &#8451;
+                </span>
+            </a>
+        </li>
+    </ul>
+</div>
