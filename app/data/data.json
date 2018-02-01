@@ -1,32 +1,32 @@
 [
   {
     "id": 1,
-    "name": "İstanbul",
+    "name": "istanbul",
     "weather": 10
   },
   {
     "id": 2,
-    "name": "Ankara",
+    "name": "ankara",
     "weather": 20
   },
   {
     "id": 3,
-    "name": "Eskişehir",
+    "name": "eskişehir",
     "weather": 30
   },
   {
     "id": 4,
-    "name": "Adana",
+    "name": "adana",
     "weather": 6
   },
   {
     "id": 5,
-    "name": "İzmir",
+    "name": "izmir",
     "weather": 8
   },
   {
     "id": 6,
-    "name": "Rize",
+    "name": "rize",
     "weather": 9
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "id": 8,
-    "name": "Iğdır",
+    "name": "ığdır",
     "weather": 9
   },
   {

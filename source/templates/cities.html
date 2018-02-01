@@ -3,20 +3,36 @@
         {{title}}
     </h4>
     <div class="cities-search">
-        <input type="text" placeholder="Search">
+        <input type="text" placeholder="Search" city-search>
     </div>
 
-    <ul>
-        <li ng-repeat="city in Cities">
-            <a href="#!/city/{{city.id}}">
+    <div class="cities-list"  ng-show="!searchStatus">
+        <ul>
+            <li ng-repeat="city in Cities">
+                <a href="#!/city/{{city.id}}">
                <span class="city-name">
                    {{city.name}}
                </span>
 
-                <span class="city-weather">
+                    <span class="city-weather">
                      {{city.weather}} &#8451;
                 </span>
-            </a>
-        </li>
-    </ul>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="search-result"  ng-show="searchStatus"  >
+        <ul>
+            <li ng-repeat="city in searchResult">
+                <a href="#!/city/{{city.id}}">
+               <span class="city-name">
+                   {{city.name}}
+               </span>
+                    <span class="city-weather">
+                     {{city.weather}} &#8451;
+                </span>
+                </a>
+            </li>
+        </ul>
+    </div>
 </div>
